@@ -1,0 +1,293 @@
+.posting-details {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    margin: 0 auto;
+}
+
+.content-container {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.h2 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.how-to-container {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    padding-top: 20px;
+    display: grid;
+}
+
+.how-to-card {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    grid-column-gap: 16px;
+    background-color: #fff;
+    padding: 24px;
+    display: flex;
+}
+
+.indicator-container {
+    max-height: 40px;
+    min-width: 40px;
+    background-color: #FEF084;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    .indicator-text {
+        color: #464646;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+.how-to-card-text-container {
+    grid-row-gap: 8px;
+    flex-direction: column;
+    flex: 0 auto;
+    align-items: stretch;
+    display: flex;
+
+    .h3 {
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+
+    .card-text {
+        font-weight: 400;
+        color: #171716;
+        line-height: 130%;
+    }
+}
+
+.pricing-wrapper {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.pricing-card-container {
+    font-family: 'Nunito';
+    font-style: normal;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+}
+
+.pricing-card {
+    grid-row-gap: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    flex-direction: column;
+    padding: 24px;
+    display: flex;
+    position: relative;
+}
+
+.pricing-card-head-container {
+    grid-row-gap: 8px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+
+    .pricing-card-description {
+        color: #747474;
+        white-space: normal;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 32px;
+        line-height: 120%;
+    }
+}
+
+.pricing-card-price-container {
+    grid-row-gap: 8px;
+    flex-direction: column;
+    display: flex;
+
+    .job-card-description {
+        color: #747474;
+        white-space: nowrap;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .price {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 120%;
+
+        .text-span-2 {
+            text-decoration: line-through;
+        }
+    }
+}
+
+.pricing-card-benefits-container {
+    grid-row-gap: 16px;
+    flex-direction: column;
+    display: flex;
+    
+    .pricing-card-benefit-container {
+        grid-column-gap: 8px;
+        align-items: center;
+        display: flex;
+        word-wrap: break-word;
+        .image-checkbox {
+            max-width: 100%;
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}
+.pricing-card-benefit{
+    white-space: normal;
+}
+.pricing-button {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+
+    .primary-button-large {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #464646;
+        text-align: center;
+        background-color: #FEF084;
+        border-radius: 8px;
+        padding: 18px 32px;
+        display: inline-block;
+        text-decoration: none;
+        border: 0;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 787px) {
+    .pricing-card-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .pricing-card {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .pricing-card-benefits-container {
+        gap: 40px;
+        flex-direction: row;
+        display: flex;
+        text-align: start;
+    }
+
+    .pricing-button {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .how-to-container {
+        width: 100%;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        justify-content: center;
+        padding-top: 20px;
+        display: grid;
+    }
+    
+    .how-to-card {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 600;
+        grid-column-gap: 16px;
+        background-color: #fff;
+        padding: 24px;
+        display: flex;
+    }
+    
+    .indicator-container {
+        max-height: 40px;
+        min-width: 40px;
+        background-color: #FEF084;
+        border-radius: 24px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    
+        .indicator-text {
+            color: #464646;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+    
+    .how-to-card-text-container {
+        grid-row-gap: 8px;
+        flex-direction: column;
+        flex: 0 auto;
+        align-items: stretch;
+        display: flex;
+    
+        .h3 {
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 24px;
+        }
+    
+        .card-text {
+            font-weight: 400;
+            color: #171716;
+            line-height: 130%;
+        }
+    }
+}
+@media screen and (max-width: 520px) {
+    .pricing-card-benefits-container {
+        gap: 40px;
+        flex-direction: column;
+        display: flex;  
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .pricing-card {
+        align-items: center;
+        justify-content: center;
+        text-align:start;
+    }
+}

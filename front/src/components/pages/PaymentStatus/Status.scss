@@ -1,0 +1,182 @@
+.succes {
+  background-color: #36b42d;
+}
+
+.succes-animation {
+  animation: succes-pulse 2s infinite;
+}
+
+.danger {
+  background-color: #CA0B00;
+}
+
+.danger-animation {
+  animation: danger-pulse 2s infinite;
+}
+.page-wrapper {
+  max-width: 392px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.custom-modal {
+  display: flex;
+  position: relative;
+  height: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.custom-modal .content {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 110px;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.custom-modal .content .type {
+  font-size: 18px;
+  color: #999;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.custom-modal .content .message-type {
+  font-size: 24px;
+  color: #000;
+}
+
+.custom-modal .content .message-type-error {
+  font-size: 36px;
+  color: #CA0B00;
+}
+
+.custom-modal .content .message-type-success {
+  font-size: 36px;
+  color: #36b42d;
+}
+
+.custom-modal .border-bottom {
+  position: absolute;
+  width: 80%;
+  height: 20px;
+  border-radius: 0 0 30px 30px;
+  bottom: -20px;
+  margin: 0 25px;
+}
+
+.custom-modal .icon-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -30px;
+  
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes succes-pulse {
+  0% {
+    box-shadow: 0px 0px 30px 20px rgba(75, 181, 67, .2);
+  }
+
+  50% {
+    box-shadow: 0px 0px 30px 20px rgba(75, 181, 67, .4);
+  }
+
+  100% {
+    box-shadow: 0px 0px 30px 20px rgba(75, 181, 67, .2);
+  }
+}
+
+@keyframes danger-pulse {
+  0% {
+    box-shadow: 0px 0px 30px 20px rgba(202, 11, 0, .2);
+  }
+
+  50% {
+    box-shadow: 0px 0px 30px 20px rgba(202, 11, 0, .4);
+  }
+
+  100% {
+    box-shadow: 0px 0px 30px 20px rgba(202, 11, 0, .2);
+  }
+}
+
+.button-box-green {
+  background: #36b42d;
+  ;
+  width: 80%;
+  border-radius: 20px;
+  outline: 0;
+  cursor: pointer;
+  height: 50px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(#36b42d, .5);
+  transition: all .5s ease-in-out;
+
+  &:hover {
+    background: darken(#36b42d, 5%);
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+  }
+}
+
+.button-box-red {
+  background: #e72424;
+  width: 70%;
+  border-radius: 20px;
+  outline: 0;
+  cursor: pointer;
+  height: 50px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(#e72424, .5);
+  transition: all .5s ease-in-out;
+
+  &:hover {
+    background: darken(#e72424, 5%);
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+  }
+}
+
+.green {
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.red {
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: 'Nunito';
+  font-style: normal;
+}
