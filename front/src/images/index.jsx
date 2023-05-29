@@ -1,1 +1,0 @@
-export { default as Line } from './svgcomponents/linesvg/line';
